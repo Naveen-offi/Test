@@ -332,15 +332,15 @@ a.more {
   -o-transition: 0.3s all ease;
   transition: 0.3s all ease;
 }
-.product-section .product-item:hover .product-thumbnail {
+.product-section .product-item:not(.no-anim):hover .product-thumbnail {
   top: -25px;
 }
-.product-section .product-item:hover .icon-cross {
+.product-section .product-item:not(.no-anim):hover .icon-cross {
   bottom: 0;
   opacity: 1;
   visibility: visible;
 }
-.product-section .product-item:hover:before {
+.product-section .product-item:not(.no-anim):hover:before {
   height: 70%;
 }
 
@@ -631,7 +631,7 @@ a.more {
 }
 
 .before-footer-section {
-  padding: 7rem 0 12rem 0 !important;
+  padding: 4rem 0 4rem 0 !important;
 }
 
 .blog-section {
@@ -970,7 +970,8 @@ textarea {
 @media (max-width: 768px) {
   iframe {
     align-items: center;
-    margin-left: 2rem;
+    margin-left: 2.5rem;
+    margin-top: 2rem;
     border: 0;
     width: 250px;
     height: 250px;
@@ -996,6 +997,22 @@ textarea {
     max-height: 100px;
     object-fit: contain;
   }
+  .section-title {
+    padding-top: 40px;
+  }
+  .brand-mobile {
+    padding-top: 10px;
+    padding-bottom: 50px;
+  }
+  .subscription-form {
+    margin-top: 40px !important;
+  }
+  .our-service-m {
+    margin-top: 1rem !important;
+  }
+  .popular-product {
+    padding-bottom: 4rem !important;
+  }
 }
 
 .btn-blue {
@@ -1006,4 +1023,13 @@ textarea {
 .btn.btn-blue:hover {
   background: #0e3ae8;
   border-color: #0e3ae8;
+}
+
+.short-service {
+  max-height: 180px;
+  object-fit: contain;
+}
+
+.no-anim {
+  height: 150px;
 }
